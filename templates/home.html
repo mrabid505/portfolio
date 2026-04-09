@@ -1,0 +1,249 @@
+{% extends 'base.html' %}
+{% block title %}Portfolio | Abid Mehmood{% endblock %}
+
+{% block content %}
+
+<!-- ===== SECTION 1: HOME ===== -->
+<section id="home">
+  <div class="grid-bg"></div>
+  <div class="particles" id="particles"></div>
+
+  <div class="home-content">
+    <div class="status-badge">
+      <span class="status-dot"></span>
+      System Online // v2.0.26 &nbsp;·&nbsp; Currently looking for a job! 🌟
+    </div>
+
+    <!-- MODIFY: Your name -->
+    <p class="home-greeting">// !السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</p>
+    <h1 class="home-name" id="heroName">Hi, I'am Abid Mehmood</h1>
+
+    <!-- MODIFY: Typing titles — add more in main.js -->
+    <div class="home-title" id="typingTitle"></div>
+
+    <!-- MODIFY: Tags -->
+    <div class="home-tags">
+      <span class="tag">Senior IT Technician</span>
+      <span class="tag">Hardware / Operating Systems</span>
+      <span class="tag">AI · ML · Data Science</span>
+      <span class="tag">Data Entry Specialist</span>
+      <span class="tag">Adobe Photoshop Specialist</span>
+      <span class="tag">Edius Specialist</span>
+      <span class="tag">Microft Office Specialist</span>
+    </div>
+
+    <div class="home-btns">
+      <a href="#contact" class="btn-primary">Start Project</a>
+      <a href="#experience" class="btn-outline">View Timeline</a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>scroll</span>
+    <span class="scroll-arrow">↓</span>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: ABOUT ===== -->
+<section id="about">
+  <div class="section-inner">
+    <p class="section-label">// 01. about</p>
+    <h2 class="section-title">Who <span>Am I?</span></h2>
+
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <!-- MODIFY: Replace with <img src="{{ url_for('static', filename='img/profile.png') }}"> -->
+        <img src="{{ url_for('static', filename='img/profile.JPG') }}" 
+     alt="Abid Mehmood" 
+     style="width:100%; aspect-ratio:.7; object-fit:cover; border:2px solid rgba(245,197,24,0.2);">
+        <div class="about-stats">
+          <div class="stat-box"><div class="stat-num">12+</div><div class="stat-label">Years Exp</div></div>
+          <div class="stat-box"><div class="stat-num">3000+</div><div class="stat-label">Repaired Devices</div></div>
+          <div class="stat-box"><div class="stat-num">8</div><div class="stat-label">Countries Visited</div></div>
+          <div class="stat-box"><div class="stat-num">3000+</div><div class="stat-label">Clients Served</div></div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <!-- MODIFY: Bio paragraphs -->
+        <p>Versatile professional with over 12 years of hands-on experience in IT support,computer operations, and data management. My journey has been a testament to my adaptability and dedication to problem-solving.</p>
+        <p>Expert in hardware diagnostics,OS troubleshooting, and system optimization. Proven track record of working in diverse international environments (Saudi Arabia, UAE, and Malaysia) alongside local experience in Pakistan.</p>
+        <p>Highly skilled in POS systems, administrative documentation, and delivering excellent customer service.</p>
+
+        <!-- MODIFY: Personal info -->
+        <div class="about-info-grid">
+          <div class="info-item"><span class="info-label">name:</span><span class="info-val">Abid Mehmood</span></div>
+          <div class="info-item"><span class="info-label">role:</span><span class="info-val">Self Employed</span></div>
+          <div class="info-item"><span class="info-label">company:</span><span class="info-val">Freelance</span></div>
+          <div class="info-item"><span class="info-label">focus:</span><span class="info-val">IT Technician</span></div>
+          <div class="info-item"><span class="info-label">email:</span><span class="info-val">********</span></div>
+          <div class="info-item"><span class="info-label">status:</span><span class="info-val" style="color:#00ff88">Available ✓</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: TECHNICAL ARSENAL ===== -->
+<section id="skills">
+  <div class="section-inner">
+    <p class="section-label">// 02. arsenal</p>
+    <h2 class="section-title">Technical <span>Arsenal</span></h2>
+
+    <!-- MODIFY: Add/remove skill cards -->
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name"> Senior IT Technician</div>
+        <div class="skill-desc">Handled counter-level customer dealing and documentation.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">No-Boot, Blue Screen, OS Corruption Issue Resolution</span><span class="skill-tag">Data Backup, Recovery & System Migration</span>
+          <span class="skill-tag">Virus & Malware Removal</span><span class="skill-tag">Custom PC Assembly & Performance Upgrades</span><span class="skill-tag">PHP</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🤖</div>
+        <div class="skill-name">AI / ML & Data Science</div>
+        <div class="skill-desc">Building intelligent systems that learn and adapt</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">Flask</span>
+          <span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">NLP</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔐</div>
+        <div class="skill-name">Data Entry & Record Keeping</div>
+        <div class="skill-desc">Ensured accuracy of records and timely updates.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python Programmer</span><span class="skill-tag">OWASP</span>
+          <span class="skill-tag">Junior Back End Developer</span><span class="skill-tag">CTF</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⛓️</div>
+        <div class="skill-name">POS / Counter Computer Handling</div>
+        <div class="skill-desc">Managed point-of-sale systems and counter computers effectively.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">POS Systems</span><span class="skill-tag">Counter Software</span>
+          <span class="skill-tag">Customer Service</span><span class="skill-tag">Troubleshooting</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📱</div>
+        <div class="skill-name">COMPUTER OPERATOR</div>
+        <div class="skill-desc">Handled printing, scanning, and email management tasks.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MAC</span><span class="skill-tag">Windows</span>
+          <span class="skill-tag">Linux</span><span class="skill-tag">IOS</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">Video Editor</div>
+        <div class="skill-desc">Canopus Edius Professional</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Adobe Photoshop</span><span class="skill-tag">Adobe Premiere Pro</span>
+          <span class="skill-tag">Adobe After Effects</span><span class="skill-tag">Canopus Edius</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: EXPERIENCE ===== -->
+<section id="experience">
+  <div class="section-inner">
+    <p class="section-label">// 03. timeline</p>
+    <h2 class="section-title">My <span>Experience</span></h2>
+
+    <div class="exp-grid">
+      <div class="timeline">
+        <!-- MODIFY: Left column timeline items -->
+        <div class="timeline-item">
+          <div class="timeline-date">2012 — Present</div>
+          <div class="timeline-role">IT Technician</div>
+          <div class="timeline-company">Self Employed</div>
+          <div class="timeline-desc">Senior IT & Computer Repair Technician with 12+ years of hands-on experience in diagnosing, repairing, and optimizing Machines.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2012 — Present</div>
+          <div class="timeline-role">Data Analyst</div>
+          <div class="timeline-company">Freelance</div>
+          <div class="timeline-desc">Microsoft Excel</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025 — Present</div>
+          <div class="timeline-role">Python & Flask Developer</div>
+          <div class="timeline-company">Freelance</div>
+          <div class="timeline-desc">Building web apps using Flask.</div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <!-- MODIFY: Right column timeline items -->
+        <div class="timeline-item">
+          <div class="timeline-date">2012 — Present</div>
+          <div class="timeline-role">Mentor Tech Specialist</div>
+          <div class="timeline-company">Freelance</div>
+          <div class="timeline-desc">Teaching practical Hardware Solutions, and freelancing skills.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021 — Present</div>
+          <div class="timeline-role">Video Editor</div>
+          <div class="timeline-company">Self-Directed Research</div>
+          <div class="timeline-desc">Editing YouTube videos. And Real World Wedding Memories.</div>
+        </div>
+        <!-- <div class="timeline-item">
+          <div class="timeline-date">2019 — 2020</div>
+          <div class="timeline-role">Junior Web Developer</div>
+          <div class="timeline-company">Digital Agency</div>
+          <div class="timeline-desc">Started the journey — HTML, CSS, JS, and PHP. Built client websites and learned software fundamentals.</div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 5: CONTACT ===== -->
+<section id="contact">
+  <div class="contact-inner">
+    <p class="section-label" style="text-align:center">// 04. contact</p>
+    <h2 class="section-title" style="text-align:center">Let's <span>Connect</span></h2>
+    <p class="contact-subtitle">Wanna Hire me? Drop a message — I'll Respond Quickly.</p>
+
+    <!-- Contact Form — sends to Flask /api/contact -->
+    <form id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">// your name</label>
+          <input type="text" id="fname" class="form-input" placeholder="e.g. John Doe" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">// your email</label>
+          <input type="email" id="femail" class="form-input" placeholder="john@example.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">// subject</label>
+        <input type="text" id="fsubject" class="form-input" placeholder="What's this about?" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">// message</label>
+        <textarea id="fmessage" class="form-textarea" rows="5" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      <div id="formMsg" class="form-msg"></div>
+      <button type="submit" class="form-submit" id="submitBtn">[ SEND MESSAGE → ]</button>
+    </form>
+
+    <!-- MODIFY: Social links -->
+    <div class="social-links">
+      <a href="https://github.com/mrabid505/" class="social-link" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/abid-mehmood-6336611b8" class="social-link" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/abid.mehmood/" class="social-link" target="_blank">Instagram</a>
+      <a href="https://wa.me/03007669505" class="social-link" target="_blank">WhatsApp</a>
+      <a href="mailto:bitznbytezz@gmail.com" class="social-link" target="_blank">Email</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
